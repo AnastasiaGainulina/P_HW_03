@@ -1,0 +1,27 @@
+# Напишите программу, которая найдёт произведение пар чисел списка.
+# Парой считаем первый и последний элемент, второй и предпоследний и т.д.
+
+# Пример:
+
+# - [2, 3, 4, 5, 6] => [12, 15, 16];
+# - [2, 3, 5, 6] => [12, 15]
+
+from random import randint
+
+
+numbers = int(input('Введите размер списка '))
+list_origin = []
+list_2 = []
+
+for i in range(numbers):
+    list_origin.append(randint(0, 9))
+
+for i in range(len(list_origin)):
+    while i < len(list_origin)/2 and numbers > len(list_origin)/2:
+        numbers = numbers - 1
+        a = list_origin[i] * list_origin[numbers]
+        list_2.append(a)
+        i += 1
+
+print(list_origin)
+print(list_2)
