@@ -4,7 +4,7 @@ def get_data():
 
 def get_number_operation():
     return input('Choose the category:\n \
-        где: 1-All the Surnames\n \
+             1-All the Surnames\n \
              2-All the Names\n \
              3-All the Grades\n \
              4-Students of the selected grade\n \
